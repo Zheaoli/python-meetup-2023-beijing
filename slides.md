@@ -78,77 +78,27 @@ transition: fade-out
 
 ---
 
-# Components
+# IaC 诞生的背景
 
-<div grid="~ cols-2 gap-4">
-<div>
+在千禧年之后，互联网世界迭代的速度愈发的快速，这个时候传统的手工式的维护面临着几个问题
 
-You can use Vue components directly inside your slides.
+1. 交互式变更所引入的人的因素太大，导致了变更的不可控性
+2. 人工变更面对愈发快速的 Infra 迭代力有不逮
+3. 交互式的变更导致管控的难做，让版本控制之类的手段变为空谈
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+<br>
 
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
+这意味着我们需要利用一种已知复杂度的手段来解决未知复杂度的问题
 
 ---
-class: px-20
+transition: fade-out
+layout: image-right
+image: https://user-images.githubusercontent.com/7054676/227724844-9f3dc775-611a-403f-a7d7-7b66fd67c79c.png
 ---
 
-# Themes
+# 最古早的 IaC
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
+其实右图能说明一些东西
 
 ---
 preload: false
